@@ -3,8 +3,8 @@ import React from 'react';
 
 function App() {
   return (
-    <div className='w-screen h-screen bg-sky-400'>
-      <h1 className='text-2xl'>Hi! Jonmid - 2013</h1>
+    <div className='w-screen h-screen bg-portfolio-primary-300'>
+      <h1 className='text-2xl text-portfolio-black-600'>Hi! Jonmid - 2013</h1>
     </div>
   );
 }
