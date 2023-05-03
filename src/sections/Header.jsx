@@ -1,28 +1,23 @@
 import React from 'react';
 import { LayoutHeader } from './../components/Layout';
-import logo from './../assets/images/logo.svg';
-import twitter from './../assets/images/twitter.svg';
-import github from './../assets/images/github.svg';
-import instagram from './../assets/images/instagram.svg';
+import { HeaderData } from '../data/data.js';
 
 const Header = () => {
   return (
-    <header className='py-4 bg-app-primary-600'>
+    <header className='fixed py-4 w-screen'>
       <LayoutHeader>
-        <img src={logo} alt='logo' />
+        <img src={HeaderData.logo.icon} alt={HeaderData.logo.title} />
         <nav>
           <ul className='flex items-center gap-x-6 text-app-white font-semibold'>
-            <li>Inicio</li>
-            <li>Servicios</li>
-            <li>Experiencia</li>
-            <li>Proyectos</li>
-            <li>Equipo</li>
+            {HeaderData.nav.map((item) => (
+              <li key={item.id}>{item.title}</li>
+            ))}
           </ul>
         </nav>
         <section className='flex items-center gap-x-4'>
-          <img src={twitter} alt='twitter' />
-          <img src={github} alt='twitter' />
-          <img src={instagram} alt='twitter' />
+          {HeaderData.social.map((item) => (
+            <img key={item.id} src={item.icon} alt={item.title} />
+          ))}
         </section>
       </LayoutHeader>
     </header>

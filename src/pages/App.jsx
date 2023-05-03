@@ -2,14 +2,15 @@ import React from 'react';
 import { Layout } from '../components/Layout';
 import Header from '../sections/Header';
 import Hero from '../sections/Hero';
-// import reactLogo from './assets/react.svg';
+import Services from '../sections/Services';
 
 function App() {
   return (
     <>
       <Header />
+      <Hero />
       <Layout>
-        <Hero />
+        <Services />
       </Layout>
     </>
   );
