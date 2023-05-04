@@ -2,6 +2,7 @@ import logo from './../assets/images/logo.svg';
 import twitter from './../assets/images/twitter.svg';
 import github from './../assets/images/github.svg';
 import instagram from './../assets/images/instagram.svg';
+import ui from './../assets/images/ui.svg';
 
 export const HeaderData = {
   logo: {
@@ -64,6 +65,7 @@ export const HeroData = {
     'Nos aseguramos que cada desarrollo sea enfocado en las necesidades de los usuarios para brindar soluciones de alta calidad.',
   btnTextDownloadCv: 'Descargar CV',
   btnTextContact: 'Contactarnos',
+  iconHero: ui,
 };
 
 export const ServiceData = {

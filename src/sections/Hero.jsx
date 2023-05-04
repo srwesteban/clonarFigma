@@ -1,12 +1,11 @@
 import React from 'react';
-import { Layout } from '../components/Layout';
-import UiIcon from '../assets/images/ui.svg';
 import { HeroData } from '../data/data.js';
+import { LayoutHero } from '../components/Layout';
 
 const Hero = () => {
   return (
     <section className='pt-[200px] pb-[150px] font-roboto bg-custom'>
-      <Layout>
+      <LayoutHero>
         <section className='flex justify-between items-center'>
           <aside>
             <section className='w-[488px]'>
@@ -25,12 +24,12 @@ const Hero = () => {
             </section>
           </aside>
           <img
-            src={UiIcon}
+            src={HeroData.iconHero}
             alt='ui'
-            className='w-[425px] shadow-2xl rotate-3'
+            className='max-w-[425px] shadow-2xl rotate-3'
           />
         </section>
-      </Layout>
+      </LayoutHero>
     </section>
   );
 };
