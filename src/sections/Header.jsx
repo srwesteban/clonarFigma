@@ -5,7 +5,7 @@ import { Bars4Icon } from '@heroicons/react/24/solid';
 
 const Header = () => {
   return (
-    <header className='fixed pt-10 pb-4 w-screen border-b border-slate-50/10 bg-white bg-opacity-0 backdrop-blur-md transition-colors duration-500'>
+    <header className='fixed z-50 pt-10 pb-4 w-screen border-b border-slate-50/10 bg-white bg-opacity-0 backdrop-blur-md transition-colors duration-500'>
       <LayoutHeader>
         <img src={HeaderData.logo.icon} alt={HeaderData.logo.title} />
         <nav className='hidden md:block'>
