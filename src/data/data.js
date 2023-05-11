@@ -92,7 +92,7 @@ export const ServiceData = {
       title: 'Desarrollo web',
       subTitle:
         'Desarrollamos sobre los mejores estándares de la web utilizando las mejores herramientas para cubrir las necesidades de nuestros clientes.',
-      orientation: 'rigth',
+      orientation: 'right',
     },
     {
       id: 3,
