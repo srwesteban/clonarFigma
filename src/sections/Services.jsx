@@ -1,5 +1,6 @@
 import React from 'react';
 import { ServiceData } from '../data/data.js';
+import ItemService from './../components/ItemService';
 
 const Services = () => {
   return (
@@ -10,6 +11,13 @@ const Services = () => {
           {ServiceData.header.subTitle}
         </p>
       </aside>
+      <section>
+        <ul className='flex flex-col items-center pt-[80px] gap-y-[80px]'>
+          {ServiceData.items.map((item) => (
+            <ItemService data={item} />
+          ))}
+        </ul>
+      </section>
     </section>
   );
 };

@@ -3,6 +3,9 @@ import twitter from './../assets/images/twitter.svg';
 import github from './../assets/images/github.svg';
 import instagram from './../assets/images/instagram.svg';
 import ui from './../assets/images/ui.svg';
+import serviceIcon1 from './../assets/images/service_icon_1.svg';
+import serviceIcon2 from './../assets/images/service_icon_2.svg';
+import serviceIcon3 from './../assets/images/service_icon_3.svg';
 
 export const HeaderData = {
   logo: {
@@ -76,16 +79,28 @@ export const ServiceData = {
   },
   items: [
     {
-      icon: '',
-      title: '',
-      subTitle: '',
-      orientation: '',
+      id: 1,
+      icon: serviceIcon1,
+      title: 'Servicio de integraciones web',
+      subTitle:
+        'Garantizamos un trabajo de calidad para integrar diferentes stack de tecnologías enfocados a la web.',
+      orientation: 'left',
     },
     {
-      icon: '',
-      title: '',
-      subTitle: '',
-      orientation: '',
+      id: 2,
+      icon: serviceIcon2,
+      title: 'Desarrollo web',
+      subTitle:
+        'Desarrollamos sobre los mejores estándares de la web utilizando las mejores herramientas para cubrir las necesidades de nuestros clientes.',
+      orientation: 'rigth',
+    },
+    {
+      id: 3,
+      icon: serviceIcon3,
+      title: 'Diseño de interfaces de SW',
+      subTitle:
+        'Al utilizar metodologías para planificar el proceso de diseño garantizamos que los productos finales sean lo mas eficiente para los usuarios.',
+      orientation: 'left',
     },
   ],
 };
